@@ -1,0 +1,69 @@
+@keyframes highlight-cycle {
+  0% {
+    color: var(--color-text-body);
+    text-shadow: none;
+  }
+
+  5% {
+    color: var(--color-blue-light);
+    text-shadow: 0 0 12px rgba(115, 182, 210, 0.7);
+  }
+
+  18% {
+    color: var(--color-blue-light);
+    text-shadow: 0 0 14px rgba(115, 182, 210, 0.9);
+  }
+
+  30%,
+  100% {
+    color: var(--color-text-body);
+    text-shadow: none;
+  }
+}
+
+.highlight-1 {
+  animation: highlight-cycle 4.8s infinite;
+}
+
+.highlight-2 {
+  animation: highlight-cycle 4.8s infinite;
+  animation-delay: 1.2s;
+}
+
+.highlight-3 {
+  animation: highlight-cycle 4.8s infinite;
+  animation-delay: 2.4s;
+}
+
+@keyframes icon-cycle {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  30%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero-info-icon-1 {
+  animation: icon-cycle 4.8s infinite;
+}
+
+.hero-info-icon-2 {
+  animation: icon-cycle 4.8s infinite;
+  animation-delay: 1.2s;
+}
+
+.hero-info-icon-3 {
+  animation: icon-cycle 4.8s infinite;
+  animation-delay: 2.4s;
+}

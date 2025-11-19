@@ -72,10 +72,3 @@ html {
   --ls-none: 0%;
   --ls-wide: 5%;
 }
-
-body {
-  font-family: var(--ff-base);
-  background-color: var(--color-shape-base);
-  color: var(--color-text-body);
-  line-height: var(--lh-base);
-}
