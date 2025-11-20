@@ -35,3 +35,84 @@
   height: auto;
   flex-shrink: 0;
 }
+
+.kit-showcase {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.kit-orbit {
+  width: 100%;
+  max-width: 23rem;
+  display: grid;
+  position: relative;
+
+  place-items: center;
+}
+
+.kit-item {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  grid-area: 1/1;
+  position: relative;
+}
+
+.kit-bookmark {
+  width: 15.8%;
+}
+
+.kit-broche {
+  width: 20.20%;
+
+  z-index: 4;
+
+  transform: translateX(-113%) translateY(110%) rotate(1deg);
+}
+
+.kit-book {
+  width: 42%;
+  
+  z-index: 5;
+}
+
+.kit-bookmark-yellow {
+  z-index: 3;
+
+  transform: translateX(150%) translateY(-30%) rotate(11.72deg);
+}
+
+.kit-bookmark-purple {
+  z-index: 2;
+
+  transform: translateX(207%) translateY(-11%) rotate(22.09deg);
+}
+
+.kit-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--tag);
+  color: var(--color-text-label);
+  margin-top: 0.5rem;
+}
+
+.kit-label-bookcap {
+  display: block;
+  width: 3.67rem;
+  height: auto;
+}
+
+.kit-label-brooch {
+  display: block;
+  width: 2.20rem;
+  height: auto;
+}
+
+.kit-label-arrow {
+  display: block;
+  width: 3.06rem;
+  height: auto;
+}
