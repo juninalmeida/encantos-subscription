@@ -1,0 +1,37 @@
+.kit-inner {
+  max-width: 23rem;
+  margin: 0 auto;
+}
+
+.kit {
+  background-color: var(--color-shape-background);
+  padding: 4rem 0rem;
+}
+
+.kit-header {
+  text-align: center;
+}
+
+.kit-title {
+  font-size: var(--title-xb);
+  line-height: var(--lh-auto);
+  color: var(--color-text-title);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.kit-subtitle {
+  font-size: var(--body-sm);
+  line-height: var(--lh-base);
+  font-weight: var(--fw-regular);
+  color: var(--color-text-cz);
+  padding-top: 0.5rem;
+}
+
+.kit-icon {
+  width: 1.25rem;
+  height: auto;
+  flex-shrink: 0;
+}
