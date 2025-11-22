@@ -5,7 +5,7 @@
 
 .kit {
   background-color: var(--color-shape-background);
-  padding: 4rem 0rem;
+  padding: 4rem 1rem;
 }
 
 .kit-header {
@@ -28,6 +28,7 @@
   font-weight: var(--fw-regular);
   color: var(--color-text-cz);
   padding-top: 0.5rem;
+  margin-bottom: 7rem;
 }
 
 .kit-icon {
@@ -40,6 +41,12 @@
   margin-top: 4rem;
   display: flex;
   justify-content: center;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.kit-labels {
+  margin-top: 3rem;
 }
 
 .kit-orbit {
@@ -90,14 +97,49 @@
   transform: translateX(207%) translateY(-11%) rotate(22.09deg);
 }
 
+
 .kit-label {
+  position: absolute;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: var(--tag);
   color: var(--color-text-label);
-  margin-top: 0.5rem;
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-auto);
 }
+
+.kit-label p {
+  margin: 0;
+}
+
+.kit-label-book p {
+  transform: translateX(4rem) translateY(-1.1rem);
+}
+
+.kit-label-broche p {
+  transform: translateX(4.5rem) translateY(-2.1rem);
+}
+
+.kit-label-bookmark p {
+  transform: translateX(4.5rem) translateY(2.1rem);
+}
+
+.kit-label-book {
+  top: -4%;
+  left: -12%;
+}
+
+.kit-label-broche {
+  top: 52%;  
+  left: -13%;
+}
+
+.kit-label-bookmark {
+  bottom: 11%;
+  right: 12%;
+}
+
 
 .kit-label-bookcap {
   display: block;
