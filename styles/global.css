@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--color-shape-background);
+}
+
 :root {
   /* Pink */
   --color-pink-light: #C59DD2;

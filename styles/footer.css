@@ -1,0 +1,20 @@
+.footer {
+  position: relative;
+  margin-top: 3rem;
+  width: 100%;
+  background-color: var(--color-shape-background);
+}
+
+.footer-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.footer-background {
+  padding-top: 2rem;
+}
