@@ -253,16 +253,16 @@
   }
 }
 
-.highlight-1 {
+.hero-info .highlight-1 {
   animation: highlight-cycle 4.8s infinite;
 }
 
-.highlight-2 {
+.hero-info .highlight-2 {
   animation: highlight-cycle 4.8s infinite;
   animation-delay: 1.2s;
 }
 
-.highlight-3 {
+.hero-info .highlight-3 {
   animation: highlight-cycle 4.8s infinite;
   animation-delay: 2.4s;
 }
@@ -286,16 +286,69 @@
   }
 }
 
-.hero-info-icon-1 {
+.hero-info .hero-info-icon-1 {
   animation: icon-cycle 4.8s infinite;
 }
 
-.hero-info-icon-2 {
+.hero-info .hero-info-icon-2 {
   animation: icon-cycle 4.8s infinite;
   animation-delay: 1.2s;
 }
 
-.hero-info-icon-3 {
+.hero-info .hero-info-icon-3 {
   animation: icon-cycle 4.8s infinite;
   animation-delay: 2.4s;
+}
+
+
+@media (min-width: 1024px) {
+
+  .hero-info .highlight-1,
+  .hero-info .highlight-2,
+  .hero-info .highlight-3,
+  .hero-info .hero-info-icon-1,
+  .hero-info .hero-info-icon-2,
+  .hero-info .hero-info-icon-3 {
+    animation: none;
+  }
+
+  .hero-info:hover .highlight-1,
+  .hero-info:active .highlight-1,
+  .hero-info:focus-within .highlight-1 {
+    animation: highlight-cycle 4.8s infinite;
+  }
+
+  .hero-info:hover .highlight-2,
+  .hero-info:active .highlight-2,
+  .hero-info:focus-within .highlight-2 {
+    animation: highlight-cycle 4.8s infinite;
+    animation-delay: 1.2s;
+  }
+
+  .hero-info:hover .highlight-3,
+  .hero-info:active .highlight-3,
+  .hero-info:focus-within .highlight-3 {
+    animation: highlight-cycle 4.8s infinite;
+    animation-delay: 2.4s;
+  }
+
+  .hero-info:hover .hero-info-icon-1,
+  .hero-info:active .hero-info-icon-1,
+  .hero-info:focus-within .hero-info-icon-1 {
+    animation: icon-cycle 4.8s infinite;
+  }
+
+  .hero-info:hover .hero-info-icon-2,
+  .hero-info:active .hero-info-icon-2,
+  .hero-info:focus-within .hero-info-icon-2 {
+    animation: icon-cycle 4.8s infinite;
+    animation-delay: 1.2s;
+  }
+
+  .hero-info:hover .hero-info-icon-3,
+  .hero-info:active .hero-info-icon-3,
+  .hero-info:focus-within .hero-info-icon-3 {
+    animation: icon-cycle 4.8s infinite;
+    animation-delay: 2.4s;
+  }
 }
