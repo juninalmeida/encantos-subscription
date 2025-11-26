@@ -8,12 +8,15 @@
 .hero-background {
   position: absolute;
   inset: 0;
-  background-image: url('/assets/backgrounds/hero-background.png');
+  background-image: url("/assets/backgrounds/hero-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 0;
   pointer-events: none;
+
+  opacity: 0;
+  animation: hero-background-fade-in 2s ease-out forwards;
 }
 
 .hero-inner {
@@ -24,8 +27,8 @@
 }
 
 .hero-title {
-  font-size: 1.75rem;
-  line-height: 1.2;
+  font-size: 1.85rem;
+  line-height: 1.1;
   color: var(--color-text-title);
 }
 
@@ -53,11 +56,49 @@
   border-radius: 0.5rem;
   border: none;
   text-decoration: none;
-  background-color: var(--color-pink-base);
+  background: radial-gradient(
+      65.28% 65.28% at 50% 100%,
+      rgba(223, 113, 255, 0.8) 0%,
+      rgba(223, 113, 255, 0) 100%
+    ),
+    linear-gradient(0deg, #7a5af8, #7a5af8);
+
   color: var(--color-text-title);
   font-size: var(--button);
   font-weight: var(--fw-bold);
   cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-assinar::before,
+.btn-assinar::after {
+  content: "";
+  position: absolute;
+  inset: var(--space);
+  transition: all 0.5s ease-in-out;
+  border-radius: calc(0.5rem - var(--space));
+  z-index: 0;
+}
+
+.btn-assinar::before {
+  --space: 1px;
+  background: linear-gradient(
+    177.95deg,
+    rgba(255, 255, 255, 0.19) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.btn-assinar::after {
+  --space: 2px;
+  background: radial-gradient(
+      65.28% 65.28% at 50% 100%,
+      rgba(223, 113, 255, 0.8) 0%,
+      rgba(223, 113, 255, 0) 100%
+    ),
+    linear-gradient(0deg, #7a5af8, #7a5af8);
 }
 
 .hero-content {
@@ -69,7 +110,7 @@
 }
 
 .hero-content p {
-  font-size: 0.82rem;
+  font-size: 0.98rem;
   line-height: 1.4;
   color: var(--color-text-body);
   max-width: 20rem;

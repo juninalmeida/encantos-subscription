@@ -1,3 +1,193 @@
+@keyframes hero-background-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn-assinar__points {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.btn-assinar__point {
+  position: absolute;
+  bottom: -10px;
+  width: 2px;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: #fff;
+  animation: btn-assinar-floating-points infinite ease-in-out;
+}
+
+.btn-assinar__inner {
+  position: relative;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+}
+
+.btn-assinar__fold {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 1rem;
+  height: 1rem;
+
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+
+  background: radial-gradient(
+    120% 100% at 50% 0%,
+    rgba(197, 157, 210, 0.9) 0%,
+    rgba(197, 157, 210, 0) 100%
+  );
+
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+
+  z-index: 1;
+  transition: margin 0.35s ease-out, box-shadow 0.35s ease-out;
+}
+
+.btn-assinar:hover .btn-assinar__fold {
+  margin-top: -0.5rem;
+  margin-right: -0.5rem;
+  box-shadow: 0 0 8px rgba(197, 157, 210, 0.6);
+}
+
+.btn-assinar__fold::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 120%;
+  height: 120%;
+
+  transform: rotate(40deg) translate(50%, -50%);
+  transform-origin: top right;
+
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom-left-radius: inherit;
+  pointer-events: none;
+}
+
+.btn-assinar__icon {
+  width: 1rem;
+  height: 1rem;
+  transition: fill 0.1s linear;
+}
+
+.btn-assinar__icon polyline {
+  fill: white;
+  stroke: white;
+  stroke-dasharray: 0 0 0 0;
+}
+
+.btn-assinar:hover .btn-assinar__icon polyline {
+  animation: btn-assinar-icon-dasharray 1s linear forwards,
+    btn-assinar-icon-fill 0.1s linear forwards 0.95s;
+}
+
+@keyframes btn-assinar-icon-dasharray {
+  from {
+    fill: transparent;
+    stroke-dasharray: 0 0 0 0;
+  }
+  to {
+    fill: transparent;
+    stroke-dasharray: 68 68 0 0;
+  }
+}
+
+@keyframes btn-assinar-icon-fill {
+  to {
+    fill: white;
+  }
+}
+
+.btn-assinar__points .btn-assinar__point:nth-child(1) {
+  left: 10%;
+  opacity: 1;
+  animation-duration: 2.35s;
+  animation-delay: 0.2s;
+}
+.btn-assinar__points .btn-assinar__point:nth-child(2) {
+  left: 30%;
+  opacity: 0.7;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+}
+.btn-assinar__points .btn-assinar__point:nth-child(3) {
+  left: 25%;
+  opacity: 0.8;
+  animation-duration: 2.2s;
+  animation-delay: 0.1s;
+}
+.btn-assinar__points .btn-assinar__point:nth-child(4) {
+  left: 44%;
+  opacity: 0.6;
+  animation-duration: 2.05s;
+}
+.btn-assinar__points .btn-assinar__point:nth-child(5) {
+  left: 50%;
+  opacity: 1;
+  animation-duration: 1.9s;
+}
+.btn-assinar__points .btn-assinar__point:nth-child(6) {
+  left: 75%;
+  opacity: 0.5;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+}
+.btn-assinar__points .btn-assinar__point:nth-child(7) {
+  left: 88%;
+  opacity: 0.9;
+  animation-duration: 2.2s;
+  animation-delay: 0.2s;
+}
+.btn-assinar__points .btn-assinar__point:nth-child(8) {
+  left: 58%;
+  opacity: 0.8;
+  animation-duration: 2.25s;
+  animation-delay: 0.2s;
+}
+.btn-assinar__points .btn-assinar__point:nth-child(9) {
+  left: 98%;
+  opacity: 0.6;
+  animation-duration: 2.6s;
+  animation-delay: 0.1s;
+}
+.btn-assinar__points .btn-assinar__point:nth-child(10) {
+  left: 65%;
+  opacity: 1;
+  animation-duration: 2.5s;
+  animation-delay: 0.2s;
+}
+
+@keyframes btn-assinar-floating-points {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-55px);
+    opacity: 0;
+  }
+}
+
 @keyframes highlight-cycle {
   0% {
     color: var(--color-text-body);
