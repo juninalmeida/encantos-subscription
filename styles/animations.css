@@ -188,6 +188,48 @@
   }
 }
 
+@keyframes navbar-logo-wobble {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  40% {
+    transform: rotate(6deg);
+  }
+
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  80% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.navbar-logo-mobile:active {
+  transform: scale(0.92) rotate(-8deg);
+}
+
+@keyframes hero-content-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes highlight-cycle {
   0% {
     color: var(--color-text-body);
