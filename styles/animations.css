@@ -300,9 +300,161 @@
   animation-delay: 2.4s;
 }
 
+@keyframes kit-icon-glide-left {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  45% {
+    transform: translateX(0.75rem) rotate(12deg);
+  }
+
+  55% {
+    transform: translateX(0.75rem) rotate(12deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes kit-icon-glide-right {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  45% {
+    transform: translateX(-0.75rem) rotate(-12deg);
+  }
+
+  55% {
+    transform: translateX(-0.75rem) rotate(-12deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes kit-item-step-1 {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+
+  10%,
+  75% {
+    opacity: 1;
+    transform: translateX(var(--kit-tx)) translateY(var(--kit-ty))
+      rotate(var(--kit-rot));
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes kit-item-step-3 {
+  0%,
+  20% {
+    opacity: 0;
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+
+  30%,
+  75% {
+    opacity: 1;
+    transform: translateX(var(--kit-tx)) translateY(var(--kit-ty))
+      rotate(var(--kit-rot));
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes kit-item-step-4 {
+  0%,
+  30% {
+    opacity: 0;
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+
+  40%,
+  75% {
+    opacity: 1;
+    transform: translateX(var(--kit-tx)) translateY(var(--kit-ty))
+      rotate(var(--kit-rot));
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes kit-label-step-1 {
+  0% {
+    opacity: 0;
+  }
+
+  10%,
+  65% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes kit-label-step-2 {
+  0%,
+  10% {
+    opacity: 0;
+  }
+
+  20%,
+  65% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes kit-label-step-5 {
+  0%,
+  40% {
+    opacity: 0;
+  }
+
+  50%,
+  65% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 @media (min-width: 1024px) {
-
   .hero-info .highlight-1,
   .hero-info .highlight-2,
   .hero-info .highlight-3,

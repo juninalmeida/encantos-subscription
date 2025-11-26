@@ -35,6 +35,16 @@
   width: 2.5rem;
   height: auto;
   flex-shrink: 0;
+
+  transform-origin: center;
+}
+
+.kit-icon--left {
+  animation: kit-icon-glide-left 8s ease-in-out infinite;
+}
+
+.kit-icon--right {
+  animation: kit-icon-glide-right 8s ease-in-out infinite;
 }
 
 .kit-showcase {
@@ -58,6 +68,8 @@
   place-items: center;
 }
 
+
+
 .kit-item {
   max-width: 100%;
   height: auto;
@@ -72,31 +84,53 @@
 }
 
 .kit-broche {
-  width: 20.20%;
-
+  width: 20.2%;
   z-index: 4;
 
-  transform: translateX(-113%) translateY(110%) rotate(1deg);
+  --kit-tx: -113%;
+  --kit-ty: 110%;
+  --kit-rot: 1deg;
+
+  transform: translateX(var(--kit-tx)) translateY(var(--kit-ty))
+    rotate(var(--kit-rot));
+
+  opacity: 0;
+  animation: kit-item-step-1 6s ease-in-out infinite;
 }
 
 .kit-book {
   width: 42%;
-  
+
   z-index: 5;
-}
-
-.kit-bookmark-yellow {
-  z-index: 3;
-
-  transform: translateX(150%) translateY(-30%) rotate(11.72deg);
 }
 
 .kit-bookmark-purple {
   z-index: 2;
 
-  transform: translateX(207%) translateY(-11%) rotate(22.09deg);
+  --kit-tx: 207%;
+  --kit-ty: -11%;
+  --kit-rot: 22.09deg;
+
+  transform: translateX(var(--kit-tx)) translateY(var(--kit-ty))
+    rotate(var(--kit-rot));
+
+  opacity: 0;
+  animation: kit-item-step-4 6s ease-in-out infinite;
 }
 
+.kit-bookmark-yellow {
+  z-index: 3;
+
+  --kit-tx: 150%;
+  --kit-ty: -30%;
+  --kit-rot: 11.72deg;
+
+  transform: translateX(var(--kit-tx)) translateY(var(--kit-ty))
+    rotate(var(--kit-rot));
+
+  opacity: 0;
+  animation: kit-item-step-3 6s ease-in-out infinite;
+}
 
 .kit-label {
   position: absolute;
@@ -131,7 +165,7 @@
 }
 
 .kit-label-broche {
-  top: 52%;  
+  top: 52%;
   left: -13%;
 }
 
@@ -140,6 +174,29 @@
   right: 12%;
 }
 
+.kit-label-broche {
+  top: 52%;
+  left: -13%;
+
+  opacity: 0;
+  animation: kit-label-step-1 6s ease-in-out infinite;
+}
+
+.kit-label-book {
+  top: -4%;
+  left: -12%;
+
+  opacity: 0;
+  animation: kit-label-step-2 6s ease-in-out infinite;
+}
+
+.kit-label-bookmark {
+  bottom: 11%;
+  right: 12%;
+
+  opacity: 0;
+  animation: kit-label-step-5 6s ease-in-out infinite;
+}
 
 .kit-label-bookcap {
   display: block;
@@ -149,7 +206,7 @@
 
 .kit-label-brooch {
   display: block;
-  width: 2.20rem;
+  width: 2.2rem;
   height: auto;
 }
 
@@ -157,4 +214,21 @@
   display: block;
   width: 3.06rem;
   height: auto;
+}
+
+.kit-blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 95%;
+  height: auto;
+
+  z-index: 1;
+
+  filter: blur(40px);
+  opacity: 0.5;
+
+  pointer-events: none;
 }
