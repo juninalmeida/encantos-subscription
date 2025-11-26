@@ -630,6 +630,20 @@
   }
 }
 
+@keyframes footer-ripple-pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .hero-info .highlight-1,
   .hero-info .highlight-2,
