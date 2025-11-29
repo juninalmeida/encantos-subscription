@@ -107,44 +107,33 @@
 
 .pricing-card:hover::after {
   opacity: 0.85;
-  box-shadow: 
-    0 0 12px var(--pricing-accent-color),
-    0 0 24px var(--pricing-accent-color),
-    inset 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 12px var(--pricing-accent-color),
+    0 0 24px var(--pricing-accent-color), inset 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .pricing-card--pink::after {
   opacity: 0.6;
-  box-shadow: 
-    0 0 20px var(--pricing-accent-color),
-    0 0 15px var(--pricing-accent-color),
-    inset 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px var(--pricing-accent-color),
+    0 0 15px var(--pricing-accent-color), inset 0 0 15px rgba(0, 0, 0, 0.3);
 }
-
 
 .pricing-card--pink:hover::after {
   opacity: 0.85;
-  box-shadow: 
-    0 0 1px var(--pricing-accent-color),
-    0 0 2px var(--pricing-accent-color),
-    0 0 15px var(--pricing-accent-color),
+  box-shadow: 0 0 1px var(--pricing-accent-color),
+    0 0 2px var(--pricing-accent-color), 0 0 15px var(--pricing-accent-color),
     inset 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .pricing-card--gold::after {
   opacity: 0.6;
-  box-shadow: 
-    0 0 20px var(--pricing-accent-color),
-    0 0 15px var(--pricing-accent-color),
-    inset 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px var(--pricing-accent-color),
+    0 0 15px var(--pricing-accent-color), inset 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .pricing-card--gold:hover::after {
   opacity: 1;
-  box-shadow: 
-    0 0 1px var(--pricing-accent-color),
-    0 0 2px var(--pricing-accent-color),
-    0 0 15px var(--pricing-accent-color),
+  box-shadow: 0 0 1px var(--pricing-accent-color),
+    0 0 2px var(--pricing-accent-color), 0 0 15px var(--pricing-accent-color),
     inset 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -355,4 +344,102 @@
 
 .pricing-card--gold .pricing-card-title {
   color: var(--color-gold-base);
+}
+
+.pricing-card-icon {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .pricing {
+    padding: 6rem 2rem 8rem;
+  }
+
+  .pricing-title {
+    font-size: 2.5rem;
+    margin-bottom: 8rem;
+  }
+
+  .pricing-cards-container {
+    max-width: 75rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .pricing-card {
+    max-width: 22rem;
+    margin: 0;
+  }
+
+  .pricing-card-title {
+    font-size: 1.5rem;
+  }
+
+  .pricing-card-price {
+    font-size: 2.7rem;
+  }
+
+  .pricing-card-year {
+    font-size: 1rem;
+  }
+
+  .pricing-card-benefits {
+    margin: 1rem 0 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .pricing-card-benefits li {
+    font-size: 1.1rem;
+  }
+
+  .pricing-card-button {
+    padding: 0.7rem 1rem;
+  }
+
+  .pricing-button__text {
+    font-size: 1.1rem;
+  }
+
+  .pricing-card--pink {
+    transform: scale(1.05);
+    z-index: 2;
+  }
+
+  .pricing-card-icon {
+    display: block;
+    position: absolute;
+    width: 1.7rem;
+    height: auto;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .pricing-card-icon-1 {
+    top: -2rem;
+    left: -2rem;
+    transform: rotate(-15deg);
+  }
+
+  .pricing-card-icon-2 {
+    top: 35.5rem;
+    right: -1rem;
+    transform: rotate(-30deg);
+  }
+
+  .pricing-card-icon-3 {
+    bottom: -2.3rem;
+    left: -1.2rem;
+    transform: rotate(-16deg);
+  }
+
+    .pricing-card-icon-4 {
+    bottom: 35rem;
+    right: 14rem;
+    width: 3rem;
+    height: auto;
+    transform: rotate(0deg);
+  }
 }
