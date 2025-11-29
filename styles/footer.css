@@ -8,12 +8,13 @@
 
 .footer-divider-top {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   z-index: 0;
   pointer-events: none;
+
+  object-fit: cover;
 }
 
 .footer-content {
@@ -24,7 +25,7 @@
 
   padding-top: 6rem;
   padding-inline: 1.5rem;
-  padding-bottom: 1.1rem;
+  padding-bottom: 2rem;
 
   display: flex;
   flex-direction: column;
