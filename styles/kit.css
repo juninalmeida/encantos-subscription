@@ -68,8 +68,6 @@
   place-items: center;
 }
 
-
-
 .kit-item {
   max-width: 100%;
   height: auto;
@@ -231,4 +229,75 @@
   opacity: 0.5;
 
   pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  .kit {
+    padding: 4rem 2rem;
+  }
+
+  .kit-inner {
+    max-width: 60rem;
+  }
+
+  .kit-title {
+    font-size: 2.5rem;
+  }
+
+  .kit-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+  }
+
+  .kit-icon {
+    width: 5rem;
+  }
+
+  .kit-showcase {
+    margin-top: 10rem;
+  }
+
+  .kit-orbit {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  .kit-book {
+    width: 50%;
+  }
+
+  .kit-broche {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .kit-bookmark-yellow {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .kit-bookmark-purple {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .kit-label-book {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .kit-label-broche {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .kit-label-bookmark {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .kit-blur {
+    width: 100%;
+    filter: blur(60px);
+  }
 }
