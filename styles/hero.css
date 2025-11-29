@@ -8,7 +8,7 @@
 .hero-background {
   position: absolute;
   inset: 0;
-  background-image: url("../assets/backgrounds/hero-background.png"); 
+  background-image: url("../assets/backgrounds/hero-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -136,4 +136,55 @@
   line-height: 1.4;
   color: var(--color-text-cz);
   max-width: 20rem;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 2rem 2rem 4rem;
+    min-height: 43rem;
+  }
+
+  .hero-background {
+    background-image: url("../assets/desktop/hero-background.png");
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .hero-inner {
+    max-width: 60rem;
+  }
+
+  .navbar {
+    margin-bottom: 7rem;
+  }
+
+  .navbar-logo-mobile {
+    width: auto;
+    height: 3rem;
+    content: url("../assets/desktop/logo-horizontal.svg");
+  }
+
+  .btn-assinar {
+    min-width: 7rem;
+    height: 3rem;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+  }
+
+  .hero-content {
+    margin-top: 0;
+    max-width: 42rem;
+    margin-inline: auto;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+
+  .hero-content p {
+    font-size: 1.9rem;
+    max-width: 100%;
+    margin-top: 1.1rem;
+  }
 }
