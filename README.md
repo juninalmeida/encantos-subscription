@@ -6,6 +6,10 @@ Landing page de um clube de assinatura de livros, desenvolvida com foco em **CSS
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Responsive](https://img.shields.io/badge/Responsive-Mobile%20First-blueviolet?style=for-the-badge)
 
+<div align="center">
+  <img src="./assets/books/book.png" alt="O Castelo da Colina - Preview do projeto" width="280"/>
+</div>
+
 ---
 
 ## 🎯 Sobre o Projeto
@@ -194,8 +198,10 @@ Desenvolvedor Full Stack em formação, focado em código limpo e escalável.
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=juninalmeida&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=juninalmeida&layout=compact&langs_count=7&theme=tokyonight"/>
+  <a href="https://github.com/juninalmeida">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=juninalmeida&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=juninalmeida&layout=compact&langs_count=7&theme=tokyonight&hide_border=true"/>
+  </a>
 </div>
 
 ---
