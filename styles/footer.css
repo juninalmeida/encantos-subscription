@@ -8,13 +8,21 @@
 
 .footer-divider-top {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 375 / 415;
+
+  object-fit: contain;
+  object-position: top center;
+
   z-index: 0;
   pointer-events: none;
-
-  object-fit: cover;
+  content: url("../assets/backgrounds/book-trace-background.png");
 }
 
 .footer-content {
@@ -29,7 +37,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .footer-brand {
@@ -173,15 +181,23 @@
   width: 100%;
 }
 
+
 @media (min-width: 1024px) {
+  .footer-divider-top {
+    content: url("../assets/desktop/book-trace-background.png");
+    aspect-ratio: 1440 / 415;
+    object-fit: contain;
+    object-position: top center;
+  }
+
   .footer-content {
     max-width: 60rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     gap: 4rem;
-    padding-top: 8rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
   }
 
   .footer-brand {
@@ -216,18 +232,5 @@
 
   .footer-link {
     font-size: 1rem;
-  }
-
-  .footer-divider-top {
-    content: url(../assets/desktop/book-trace-background.png);
-    object-fit: contain;
-    object-position: top center;
-
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    object-fit: cover;
   }
 }
