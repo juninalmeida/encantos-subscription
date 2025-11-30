@@ -136,18 +136,30 @@
   line-height: 1.4;
   color: var(--color-text-cz);
   max-width: 20rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 376px) and (max-width: 1023px) {
+  .hero {
+    min-height: 0;
+    aspect-ratio: 1440 / 948;
+  }
+
+  .hero-background {
+    background-image: url("../assets/desktop/refactheroback.png");
+  }
 }
 
 @media (min-width: 1024px) {
   .hero {
     padding: 2rem 2rem 4rem;
-    min-height: 43rem;
+    min-height: 0rem;
+    aspect-ratio: 1440/948;
   }
 
   .hero-background {
-    background-image: url("../assets/desktop/hero-background.png");
-    background-size: cover;
-    background-position: center top;
+    background-image: url("../assets/desktop/refactheroback.png");
+    background-size: contain;
   }
 
   .hero-inner {
