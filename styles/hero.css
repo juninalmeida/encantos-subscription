@@ -22,7 +22,7 @@
 .hero-inner {
   position: relative;
   z-index: 1;
-  max-width: 23rem;
+  max-width: min(90vw, 60rem);
   margin: 0 auto;
 }
 
@@ -56,13 +56,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
 
+  height: clamp(2.5rem, 2rem + 2vw, 3rem);
+  width: auto;
+
   transform: rotate(0deg);
-
   transition: transform 0.18s ease-out;
-
   animation: navbar-logo-wobble 2s ease-out;
 }
 
@@ -71,9 +71,11 @@
   align-items: center;
   justify-content: center;
 
-  min-width: 5.56rem;
-  height: 2.5rem;
-  padding: 0 1.25rem;
+  min-width: clamp(5.56rem, 3.5rem + 5vw, 7rem);
+
+  height: clamp(2.5rem, 2rem + 2vw, 3rem);
+
+  padding: 0 clamp(1.25rem, 0.75rem + 2vw, 2rem);
 
   border-radius: 0.5rem;
   border: none;
@@ -86,7 +88,8 @@
     linear-gradient(0deg, #7a5af8, #7a5af8);
 
   color: var(--color-text-title);
-  font-size: var(--button);
+
+  font-size: clamp(0.875rem, 0.7rem + 0.8vw, 1.3rem);
   font-weight: var(--fw-bold);
   cursor: pointer;
 
@@ -171,8 +174,6 @@
   }
 
   .navbar-logo-mobile {
-    width: auto;
-    height: 3rem;
     content: url("../assets/desktop/logo-horizontal.svg");
   }
 

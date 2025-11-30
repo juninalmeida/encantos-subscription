@@ -49,6 +49,12 @@
   transform: rotate(16deg);
 }
 
+@media (min-width: 376px) and (max-width: 1023px) {
+  .hero-info-icon {
+    opacity: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .info-text {
     padding: 8.5rem 2rem;

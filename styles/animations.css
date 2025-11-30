@@ -300,6 +300,14 @@
   animation-delay: 2.4s;
 }
 
+@media (min-width: 376px) and (max-width: 1023px) {
+  .hero-info .hero-info-icon-1,
+  .hero-info .hero-info-icon-2,
+  .hero-info .hero-info-icon-3 {
+    animation: none;
+  }
+}
+
 @keyframes kit-icon-glide-left {
   0% {
     transform: translateX(0) rotate(0deg);
