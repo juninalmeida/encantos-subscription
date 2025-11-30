@@ -35,7 +35,6 @@
   width: 2.5rem;
   height: auto;
   flex-shrink: 0;
-
   transform-origin: center;
 }
 
@@ -64,7 +63,6 @@
   max-width: 23rem;
   display: grid;
   position: relative;
-
   place-items: center;
 }
 
@@ -72,8 +70,7 @@
   max-width: 100%;
   height: auto;
   display: block;
-
-  grid-area: 1/1;
+  grid-area: 1 / 1;
   position: relative;
 }
 
@@ -98,7 +95,6 @@
 
 .kit-book {
   width: 42%;
-
   z-index: 5;
 }
 
@@ -130,6 +126,8 @@
   animation: kit-item-step-3 6s ease-in-out infinite;
 }
 
+/* base (mobile) */
+
 .kit-label {
   position: absolute;
   display: flex;
@@ -160,38 +158,20 @@
 .kit-label-book {
   top: -4%;
   left: -12%;
-}
-
-.kit-label-broche {
-  top: 52%;
-  left: -13%;
-}
-
-.kit-label-bookmark {
-  bottom: 11%;
-  right: 12%;
-}
-
-.kit-label-broche {
-  top: 52%;
-  left: -13%;
-
-  opacity: 0;
-  animation: kit-label-step-1 6s ease-in-out infinite;
-}
-
-.kit-label-book {
-  top: -4%;
-  left: -12%;
-
   opacity: 0;
   animation: kit-label-step-2 6s ease-in-out infinite;
 }
 
+.kit-label-broche {
+  top: 52%;
+  left: -13%;
+  opacity: 0;
+  animation: kit-label-step-1 6s ease-in-out infinite;
+}
+
 .kit-label-bookmark {
   bottom: 11%;
   right: 12%;
-
   opacity: 0;
   animation: kit-label-step-5 6s ease-in-out infinite;
 }
@@ -219,15 +199,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 95%;
   height: auto;
-
   z-index: 1;
-
   filter: blur(40px);
   opacity: 0.5;
-
   pointer-events: none;
 }
 
@@ -266,6 +242,7 @@
     width: 50%;
   }
 
+  /* hover:*/
   .kit-broche {
     opacity: 0;
     visibility: hidden;
@@ -299,5 +276,78 @@
   .kit-blur {
     width: 100%;
     filter: blur(60px);
+  }
+
+  .kit-label p {
+    position: relative;
+    transform: none;
+    font-size: 1.2rem;
+  }
+
+  .kit-label {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .kit-label-book p {
+    top: -2.2rem;
+    left: 5rem;
+  }
+
+  .kit-label-broche p {
+    top: -5rem;
+    left: 6.5rem;
+  }
+
+  .kit-label-bookmark p {
+    top: 5rem;
+    left: 12rem;
+  }
+
+  .kit-label-book,
+  .kit-label-broche,
+  .kit-label-bookmark {
+    z-index: 10;
+  }
+
+  .kit-label-book {
+    top: -4%;
+    left: 11%;
+  }
+
+  .kit-label-broche {
+    top: 45%;
+    left: 6rem;
+  }
+
+  .kit-label-bookmark {
+    bottom: 6rem;
+    right: 13rem;
+  }
+
+  /* Ícones / setas no desktop */
+  .kit-label-bookcap,
+  .kit-label-brooch,
+  .kit-label-arrow {
+    display: block;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .kit-label-bookcap {
+    width: 6rem;
+  }
+
+  .kit-label-brooch {
+    width: 5rem;
+  }
+
+  .kit-label-arrow {
+    width: 6rem;
+  }
+
+  .kit-label-bookmark .kit-label-arrow {
+    transform: rotate(-45deg);
+    transform-origin: center;
   }
 }

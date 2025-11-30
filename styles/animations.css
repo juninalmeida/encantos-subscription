@@ -605,15 +605,15 @@
     transform: translateY(0) scale(0.8);
     opacity: 0;
   }
-  
+
   10% {
     opacity: 1;
   }
-  
+
   80% {
     opacity: 0.6;
   }
-  
+
   100% {
     transform: translateY(-50px) scale(1.2);
     opacity: 0;
@@ -624,7 +624,7 @@
   0% {
     left: -100%;
   }
-  
+
   100% {
     left: 200%;
   }
@@ -654,9 +654,7 @@
     animation: none;
   }
 
-  .hero-info:hover .highlight-1,
-  .hero-info:active .highlight-1,
-  .hero-info:focus-within .highlight-1 {
+  .hero-info:hover .highlight-1 {
     animation: highlight-cycle 4.8s infinite;
   }
 
@@ -692,5 +690,63 @@
   .hero-info:focus-within .hero-info-icon-3 {
     animation: icon-cycle 4.8s infinite;
     animation-delay: 2.4s;
+  }
+
+  .kit-icon--left,
+  .kit-icon--right,
+  .kit-broche,
+  .kit-bookmark-yellow,
+  .kit-bookmark-purple,
+  .kit-label-book,
+  .kit-label-broche,
+  .kit-label-bookmark {
+    animation: none;
+  }
+
+  .kit-showcase:hover .kit-broche,
+  .kit-showcase:hover .kit-bookmark-yellow,
+  .kit-showcase:hover .kit-bookmark-purple {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .kit-showcase:hover .kit-label-book,
+  .kit-showcase:hover .kit-label-broche,
+  .kit-showcase:hover .kit-label-bookmark {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Animações no hover */
+  .kit-showcase:hover .kit-icon--left {
+    animation: kit-icon-glide-left 4s ease-in-out infinite;
+  }
+
+  .kit-showcase:hover .kit-icon--right {
+    animation: kit-icon-glide-right 4s ease-in-out infinite;
+  }
+
+  .kit-showcase:hover .kit-broche {
+    animation: kit-item-step-1 3s ease-in-out infinite;
+  }
+
+  .kit-showcase:hover .kit-bookmark-yellow {
+    animation: kit-item-step-3 3s ease-in-out infinite;
+  }
+
+  .kit-showcase:hover .kit-bookmark-purple {
+    animation: kit-item-step-4 3s ease-in-out infinite;
+  }
+
+  .kit-showcase:hover .kit-label-book {
+    animation: kit-label-step-2 3s ease-in-out infinite;
+  }
+
+  .kit-showcase:hover .kit-label-broche {
+    animation: kit-label-step-1 3s ease-in-out infinite;
+  }
+
+  .kit-showcase:hover .kit-label-bookmark {
+    animation: kit-label-step-5 3s ease-in-out infinite;
   }
 }
