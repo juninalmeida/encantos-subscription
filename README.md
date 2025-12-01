@@ -16,6 +16,8 @@ Landing page de um clube de assinatura de livros, desenvolvida com foco em **CSS
 
 Uma landing page moderna para um serviço fictício de assinatura de livros. O projeto foi desenvolvido como exercício prático de **HTML e CSS avançado**, explorando técnicas modernas sem dependência de JavaScript.
 
+> **📌 Sobre a autoria:** Este projeto partiu de um protótipo fornecido pela Rocketseat (link na seção Links), mas foi **significativamente expandido** com novas interações, animações customizadas e soluções técnicas próprias. O resultado final reflete minhas escolhas de arquitetura, responsividade e interatividade.
+
 ### ✨ Destaques
 
 - **Zero JavaScript** — Todas as interações são feitas puramente com CSS
@@ -29,13 +31,13 @@ Uma landing page moderna para um serviço fictício de assinatura de livros. O p
 
 ### 🎨 Layout & Responsividade
 
-| Técnica | Aplicação |
-|---------|-----------|
-| **Mobile-First** | Base em 375px, expandindo para tablets e desktop |
-| **Flexbox** | Navbar, cards de pricing, footer |
-| **CSS Grid** | Sobreposição de elementos na seção kit (`grid-area: 1/1`) |
-| **`clamp()`** | Tipografia e espaçamentos fluidos |
-| **`aspect-ratio`** | Proporções consistentes em backgrounds |
+| Técnica            | Aplicação                                                 |
+| ------------------ | --------------------------------------------------------- |
+| **Mobile-First**   | Base em 375px, expandindo para tablets e desktop          |
+| **Flexbox**        | Navbar, cards de pricing, footer                          |
+| **CSS Grid**       | Sobreposição de elementos na seção kit (`grid-area: 1/1`) |
+| **`clamp()`**      | Tipografia e espaçamentos fluidos                         |
+| **`aspect-ratio`** | Proporções consistentes em backgrounds                    |
 
 ### ⚡ Animações Avançadas
 
@@ -66,13 +68,13 @@ animation-range: entry 0% exit 100%;
 
 ### 🔧 Recursos Modernos
 
-| Recurso | Uso |
-|---------|-----|
-| `@supports` | Feature queries para fallbacks graceful |
-| `inset` | Shorthand para posicionamento |
-| CSS Custom Properties | Sistema de design tokens completo |
-| `visibility` + `opacity` | Transições suaves mantendo acessibilidade |
-| `pointer-events` | Controle de interatividade durante animações |
+| Recurso                  | Uso                                          |
+| ------------------------ | -------------------------------------------- |
+| `@supports`              | Feature queries para fallbacks graceful      |
+| `inset`                  | Shorthand para posicionamento                |
+| CSS Custom Properties    | Sistema de design tokens completo            |
+| `visibility` + `opacity` | Transições suaves mantendo acessibilidade    |
+| `pointer-events`         | Controle de interatividade durante animações |
 
 ---
 
@@ -115,13 +117,13 @@ O CSS está modularizado por **seções da página**, facilitando manutenção e
 
 ```css
 /* Cores principais */
---color-pink-base: #9547A5;
---color-blue-base: #358BB9;
---color-gold-base: #FFEB74;
+--color-pink-base: #9547a5;
+--color-blue-base: #358bb9;
+--color-gold-base: #ffeb74;
 
 /* Backgrounds */
---color-shape-background: #00050A;
---color-shape-base: #000F1F;
+--color-shape-background: #00050a;
+--color-shape-base: #000f1f;
 ```
 
 ### Tipografia
@@ -134,17 +136,18 @@ O CSS está modularizado por **seções da página**, facilitando manutenção e
 
 ## 📱 Breakpoints
 
-| Breakpoint | Comportamento |
-|------------|---------------|
-| `< 376px` | Mobile base (design completo) |
-| `376px - 1023px` | Tablet (animações simplificadas) |
-| `≥ 1024px` | Desktop (interações hover ativadas) |
+| Breakpoint       | Comportamento                       |
+| ---------------- | ----------------------------------- |
+| `< 376px`        | Mobile base (design completo)       |
+| `376px - 1023px` | Tablet (animações simplificadas)    |
+| `≥ 1024px`       | Desktop (interações hover ativadas) |
 
 ---
 
 ## 🚀 Como Executar
 
 1. Clone o repositório
+
 ```bash
 git clone https://github.com/juninalmeida/encantos-literarios.git
 ```
@@ -158,9 +161,11 @@ git clone https://github.com/juninalmeida/encantos-literarios.git
 ## 📸 Preview
 
 ### Mobile (375px)
+
 Cards empilhados verticalmente com scroll-driven animations.
 
 ### Desktop (1024px+)
+
 Cards em leque que se revelam no hover — efeito criado puramente com CSS usando `:has()`.
 
 ---
@@ -179,7 +184,8 @@ Este projeto consolidou conhecimentos em:
 
 ## 🔗 Links
 
-- **Design (Figma):** [Rocketseat Community](https://www.figma.com/community/file/1394686421442995256/lp-de-clube-de-assinatura)
+- **Protótipo Original (Figma):** [Rocketseat Community](https://www.figma.com/community/file/1394686421442995256/lp-de-clube-de-assinatura)  
+  _Base inicial do projeto. O resultado final possui interações e animações adicionais não presentes no protótipo._
 
 ---
 
